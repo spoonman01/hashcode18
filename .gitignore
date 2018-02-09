@@ -1,22 +1,104 @@
-# Compiled class file
-*.class
+# Spring Boot #
+######################
+target/
+src/main/resources/application.properties
+src/main/resources/client_secret.json
 
-# Log file
+# OS Generated Files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.git
+desktop.ini
+$RECYCLE.BIN/
+
+# Logs and databases #
+######################
 *.log
+*.sql
+*.sqlite
 
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
 *.jar
-*.war
-*.ear
-*.zip
-*.tar.gz
 *.rar
+*.tar
+*.zip
+*.bak
+*.psd
+*.ai
+*.eps
+*.tpl.php
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+# Compiled Source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+node_modules/
+.sass-cache/
+npm-debug.lo
+
+# IDE and Text Editors #
+########################
+
+# Vim
+.*.sw[a-z]
+*.un~
+Session.vim
+.netrwhist
+ 
+# Eclipse
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+.externalToolBuilders/
+*.launch
+.buildpath
+
+#VS Code
+.vscode/
+ 
+# PhpStorm
+.idea/
+ 
+# TextMate
+*.tmproj
+*.tmproject
+tmtags
+ 
+# Sublime Text
+/*.sublime-project
+*.sublime-workspace
+ 
+# Netbeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
