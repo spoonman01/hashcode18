@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -20,12 +21,14 @@ import java.util.stream.Stream;
  */
 public class Template {
 
-    public static void main(String args[]) {
-        
+    public static void main(String args[]) throws IOException {
+
         List<String> list = new ArrayList<>();
-        Path p = Paths.get("..//input.in");
-        
-        try (Stream<String> stream = Files.lines(Paths.get(p.toUri()))) {
+        Path pathInput = Paths.get("..//input.in");
+        Path pathOutput = Paths.get("..//output.out");
+
+        // Read file and close it automaticaly
+        try (Stream<String> stream = Files.lines(Paths.get(pathInput.toUri()))) {
             list = stream
                     .filter(line -> !line.startsWith("line3"))
                     .map(String::toUpperCase)
@@ -36,6 +39,10 @@ public class Template {
         }
 
         // DO STUFF
-        list.forEach(System.out::println);
+        
+        // Print file
+        StringBuilder outputStream = new StringBuilder();
+        list.forEach( s -> outputStream.append(s + "\n"));
+        Files.write(pathOutput, outputStream.toString().getBytes());
     }
 }

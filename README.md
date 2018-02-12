@@ -1,2 +1,5 @@
 # hashcode18
-Java SE project used as template for the Google Hashcode 2018
+Basic templates in various languages usable as templates for Google Hashcode, currently including:
+- [x] Java SE 
+- [x] Python 2.7
+- [] Javascript (Node)

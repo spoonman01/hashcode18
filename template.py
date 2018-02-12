@@ -21,6 +21,7 @@ def main():
     ############### READ FILE ###############
 
     # read all file
+    print("reading file...")
     fileLines = open('input.in', 'r').readlines()
 
     # usually first line is distinct integer variables
@@ -55,6 +56,7 @@ def main():
     someRowHeader = 'ROW'
 
     ############### PRINT FILE ###############
+    print("writing file...")
     fileOutput = open('output.out', 'w')
     fileOutput.write(str(countResults) + '\n')
     for b in range(countResults):
