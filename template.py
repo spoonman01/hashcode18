@@ -60,7 +60,7 @@ def main():
     fileOutput = open('output.out', 'w')
     fileOutput.write(str(countResults) + '\n')
     for b in range(countResults):
-        fileOutput.write(someRowHeader + ' ')
+        fileOutput.write(someRowHeader + str(b) + ' ')
         for t in range(len(list2)):
             fileOutput.write(str(list2[t]) + ' ')
         fileOutput.write('\n')
